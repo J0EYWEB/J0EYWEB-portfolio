@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  height: 80vh;
+  margin-bottom: 100px;
 }
 
 h2 {
@@ -15,6 +15,7 @@ h2 {
 
 P {
   font-size: 16px;
+  line-height: 25.6px;
 }
 
 h1 {
@@ -26,6 +27,15 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 29.5px;
+  font-weight: 400;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -35,6 +45,21 @@ a {
 
 .heading {
   margin-top: 100px;
+}
+
+.grid-container {
+  margin-top: 50px;
+}
+.grid-container .project-card h4 {
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+.project-image {
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(13, 104, 105, 0.997);
 }
 
 /*# sourceMappingURL=style.css.map */
