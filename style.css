@@ -1,3 +1,40 @@
+body {
+  margin: 10px 20px;
+  background-color: rgb(11, 68, 72);
+  color: white;
+}
 
+header {
+  height: 80vh;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+P {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heading {
+  margin-top: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */
