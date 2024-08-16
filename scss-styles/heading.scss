@@ -1,5 +1,15 @@
+@use './media-mixins.scss';
+
 .heading {
     margin-top: 100px;
+    
+}
+
+.heading-paragraph {
+    @include media-mixins.tablet{
+        width: 75%;
+    }
+
 }
 
     

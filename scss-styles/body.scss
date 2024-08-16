@@ -1,3 +1,4 @@
+@use './media-mixins.scss';
 body {
     margin: 0;
     background-color: rgb(11, 68, 72);
@@ -5,6 +6,7 @@ body {
 }
 
 header {
+    margin-top: 10px;
     margin-bottom: 100px;
     margin-left: 20px;
     margin-right: 20px;

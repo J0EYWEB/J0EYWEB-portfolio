@@ -1,6 +1,18 @@
+@use './media-mixins.scss';
+
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+        .nav-links {
+            display:none;
+
+            @include media-mixins.tablet{
+                display: flex;
+                justify-content: space-between;
+                width: 33%;
+            }
+        }
 }

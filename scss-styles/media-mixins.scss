@@ -1,0 +1,7 @@
+@import './devices.scss';
+
+@mixin tablet {
+    @media only screen and (min-width:$sm){
+        @content;
+    }
+}

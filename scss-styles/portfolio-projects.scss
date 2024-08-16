@@ -1,6 +1,13 @@
+@use './media-mixins.scss';
 .grid-container {
     margin-top: 50px;
 
+    @include media-mixins.tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
 
     .project-card {
 
