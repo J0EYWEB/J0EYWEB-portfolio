@@ -36,6 +36,11 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: 24px;
+  font-weight: 700px;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -76,6 +81,31 @@ h4 {
 }
 .article-section .portfolio-image-section img {
   width: 100%;
+}
+
+.personal-experience .collapsible-menus {
+  display: flex;
+  flex-direction: column;
+}
+.personal-experience .collapsible-menus h5 {
+  margin: 0;
+}
+.personal-experience .collapsible-menus .collapsible-buttons {
+  margin: 40px 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.personal-experience .collapsible-menus .collapsible-buttons .collapsible {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.5px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
