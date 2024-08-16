@@ -62,4 +62,20 @@ h4 {
   background-color: rgba(13, 104, 105, 0.997);
 }
 
+.article-section {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 75px;
+}
+.article-section .about-paragraphs {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.article-section .portfolio-image-section {
+  margin: 0;
+}
+.article-section .portfolio-image-section img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

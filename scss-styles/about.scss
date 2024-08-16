@@ -1,0 +1,18 @@
+.article-section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 75px;
+
+        .about-paragraphs {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .portfolio-image-section{
+            margin: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+}
+
