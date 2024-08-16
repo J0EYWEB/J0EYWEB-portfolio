@@ -10,6 +10,9 @@
         width: 75%;
     }
 
+    @include media-mixins.laptop{
+        width: 50%;
+    }
 }
 
     

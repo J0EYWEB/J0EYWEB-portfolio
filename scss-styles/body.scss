@@ -10,10 +10,21 @@ header {
     margin-bottom: 100px;
     margin-left: 20px;
     margin-right: 20px;
+
+    @include media-mixins.laptop{
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 main {
     margin: 10px 20px;
+
+    @include media-mixins.laptop{
+        margin: 20px 50px;
+    }
 }
 
 h2 {
@@ -36,7 +47,7 @@ a {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 32px;
 }
 
 h4 {

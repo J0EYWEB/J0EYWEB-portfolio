@@ -26,5 +26,13 @@
                     border-bottom: 0.5px solid white;
                 }
         }
+
+    }
+
+    @include media-mixins.laptop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 100px;
     }
 }
