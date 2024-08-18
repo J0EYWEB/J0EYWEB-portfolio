@@ -23,7 +23,12 @@
                     color: white;
                     background-color: transparent;
                     border: none;
-                    border-bottom: 0.5px solid white;
+                    border-bottom: 1px solid white;
+                    font-size: 14px;
+
+                    @include media-mixins.desktop{
+                       font-size: 16px;
+                    }
                 }
         }
 
@@ -34,5 +39,16 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 100px;
+    }
+
+    @include media-mixins.laptop-large{
+        font-size: 36px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    @include media-mixins.desktop{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

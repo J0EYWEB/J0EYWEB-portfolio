@@ -6,12 +6,17 @@
 }
 
 .heading-paragraph {
+
     @include media-mixins.tablet{
         width: 75%;
     }
 
     @include media-mixins.laptop{
         width: 50%;
+    }
+
+    @include media-mixins.desktop{
+        width: 45%;
     }
 }
 

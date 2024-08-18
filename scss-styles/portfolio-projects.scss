@@ -2,7 +2,7 @@
 .grid-container {
     margin-top: 50px;
 
-    @include media-mixins.tablet{
+    @include media-mixins.large-phone{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -16,10 +16,24 @@
             margin-bottom: 100px;
         }
     }
+
+    @include media-mixins.laptop-large{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        column-gap: 50px;
+    }
 }
+
 .project-image {
     height: 25vh;
     width: 100%;
     border-radius: 10px;
     background-color: rgba(13, 104, 105, 0.997);
+
+    @include media-mixins.large-desktopQHD{
+        height: 30vh;
+    }
 }

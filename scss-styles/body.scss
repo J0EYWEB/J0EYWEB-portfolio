@@ -12,11 +12,21 @@ header {
     margin-right: 20px;
 
     @include media-mixins.laptop{
-        margin-top: 20px;
         margin-bottom: 100px;
         margin-left: 50px;
         margin-right: 50px;
     }
+    
+    @include media-mixins.desktop{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        margin-bottom: 150px;
+    }
+
 }
 
 main {
@@ -25,37 +35,132 @@ main {
     @include media-mixins.laptop{
         margin: 20px 50px;
     }
+
+    @include media-mixins.desktop{
+        margin: 40px 100px;
+    }
+}
+
+h1{
+    font-size: 24px;
+
+    @include media-mixins.laptop-large{
+        font-size: 36px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 42px;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        font-size: 50px;
+    }
 }
 
 h2 {
     font-size: 80px;
     font-weight: 400;
+
+    @include media-mixins.laptop-large{
+        font-size: 100px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 100px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 128px;
+    }
+    
+    @include media-mixins.large-desktopQHD{
+        font-size: 168px;
+    }
 }
 
 P {
     font-size: 16px;
     line-height: 25.6px;
+
+    @include media-mixins.laptop-large{
+        font-size: 18px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 20px;
+    }
+    @include media-mixins.large-desktop{
+        font-size: 24px;   
+    }
+
+    @include media-mixins.large-desktopQHD{
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
 }
 
-h1{
-    font-size: 24px;
-}
+
 
 a {
     color: white;
     text-decoration: none;
+
+    @include media-mixins.laptop-large{
+        font-size: 18px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 20px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 24px;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        font-size: 28px;
+    }
 }
 
 h3 {
     font-size: 32px;
+
+    @include media-mixins.laptop-large{
+        font-size: 48px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 54px;   
+    }
 }
 
 h4 {
     font-size: 29.5px;
     font-weight: 400;
+
+    @include media-mixins.laptop-large{
+        font-size: 36px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 42px;
+    }
 }
 
 h5 {
     font-size: 24px;
     font-weight: 700px;
+
+    @include media-mixins.laptop-large{
+        font-size: 28px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 32px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 36px;
+    }
 }
