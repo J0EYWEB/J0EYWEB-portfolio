@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgb(11, 68, 72);
+  background-color: #0b4448;
   color: white;
 }
 
@@ -195,6 +195,14 @@ h5 {
   align-items: center;
   width: 100%;
 }
+.navigation .last-name-span {
+  color: cyan;
+}
+@media only screen and (min-width: 768px) {
+  .navigation .nav-menu-icon {
+    display: none;
+  }
+}
 .navigation .nav-links {
   display: none;
 }
@@ -208,6 +216,29 @@ h5 {
 
 .heading {
   margin-top: 100px;
+}
+.heading .heading-span-phone {
+  padding-bottom: 5%;
+}
+.heading .heading-span-phone__border {
+  border-bottom: 5px solid cyan;
+}
+.heading .heading-span-phone__border--radius {
+  border-radius: 5px;
+}
+@media only screen and (min-width: 992px) {
+  .heading .heading-span-phone {
+    border-bottom: none;
+  }
+  .heading .heading-span {
+    padding-bottom: 2%;
+  }
+  .heading .heading-span__border {
+    border-bottom: 10px solid cyan;
+  }
+  .heading .heading-span__border--radius {
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -237,9 +268,43 @@ h5 {
     column-gap: 20px;
   }
 }
-.grid-container .project-card h4 {
+.grid-container .project-card .project-info {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-container .project-card .project-info h4 {
   margin-top: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+.grid-container .project-card .project-info h4 .project-number__border {
+  border-bottom: 5px solid cyan;
+}
+.grid-container .project-card .project-info h4 .project-number__border--radius {
+  border-radius: 5px;
+}
+.grid-container .project-card .project-image {
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(13, 104, 105, 0.997);
+}
+@media only screen and (min-width: 2500px) {
+  .grid-container .project-card .project-image {
+    height: 30vh;
+  }
+}
+.grid-container .project-card .react-buttons {
+  margin-bottom: 50px;
+}
+.grid-container .project-card .react-buttons .react-scss-buttons__design {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.grid-container .project-card .react-buttons .react-scss-buttons__design--color {
+  background-color: rgba(13, 104, 105, 0.997);
+  color: white;
 }
 @media only screen and (min-width: 1200px) {
   .grid-container {
@@ -253,21 +318,24 @@ h5 {
   }
 }
 
-.project-image {
-  height: 25vh;
-  width: 100%;
-  border-radius: 10px;
-  background-color: rgba(13, 104, 105, 0.997);
-}
-@media only screen and (min-width: 2500px) {
-  .project-image {
-    height: 30vh;
-  }
+.projects-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .about-section {
   margin-top: 75px;
   margin-bottom: 75px;
+}
+.about-section .phone-heading .about-phone-heading {
+  padding-bottom: 2%;
+}
+.about-section .phone-heading .about-phone-heading__border {
+  border-bottom: 2px solid cyan;
+}
+.about-section .phone-heading .about-phone-heading__border--radius {
+  border-radius: 2px;
 }
 @media only screen and (min-width: 768px) {
   .about-section .phone-heading {
@@ -295,6 +363,15 @@ h5 {
 }
 .article-section .about-paragraphs .desktop-heading {
   display: none;
+}
+.article-section .about-paragraphs .desktop-heading .about-desktop-heading {
+  padding-bottom: 2%;
+}
+.article-section .about-paragraphs .desktop-heading .about-desktop-heading__border {
+  border-bottom: 5px solid cyan;
+}
+.article-section .about-paragraphs .desktop-heading .about-desktop-heading__border--radius {
+  border-radius: 5px;
 }
 @media only screen and (min-width: 768px) {
   .article-section .about-paragraphs .desktop-heading {
@@ -353,6 +430,15 @@ h5 {
 .personal-experience .collapsible-menus h5 {
   margin: 0;
 }
+.personal-experience .collapsible-menus h5 .personal-heading {
+  padding-bottom: 5px;
+}
+.personal-experience .collapsible-menus h5 .personal-heading__border {
+  border-bottom: 5px solid cyan;
+}
+.personal-experience .collapsible-menus h5 .personal-heading__border--radius {
+  border-radius: 5px;
+}
 .personal-experience .collapsible-menus .collapsible-buttons {
   margin: 40px 0;
   font-size: 16px;
@@ -368,8 +454,10 @@ h5 {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid cyan;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 1400px) {
   .personal-experience .collapsible-menus .collapsible-buttons .collapsible {
@@ -408,7 +496,7 @@ h5 {
   background-color: transparent;
   color: white;
   font-size: 18px;
-  border: 2px solid white;
+  border: 2px solid cyan;
   padding: 25px 100px;
 }
 @media only screen and (min-width: 1900px) {
@@ -423,6 +511,16 @@ h5 {
   width: 100%;
   height: 15vh;
   background-color: rgba(13, 104, 105, 0.997);
+}
+.footer .footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2%;
+}
+.footer img {
+  height: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */

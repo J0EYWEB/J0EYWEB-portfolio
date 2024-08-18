@@ -6,14 +6,27 @@
     align-items: center;
     width: 100%;
 
-        .nav-links {
-            display:none;
 
-            @include media-mixins.tablet{
-                display: flex;
-                justify-content: space-between;
-                width: 30%;
-                
-            }
+
+
+    .last-name-span{
+        color: cyan;
+    }
+
+    .nav-menu-icon {
+        @include media-mixins.tablet{
+            display: none;
         }
+    }
+
+    .nav-links {
+        display:none;
+
+        @include media-mixins.tablet{
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+            
+        }
+    }
 }

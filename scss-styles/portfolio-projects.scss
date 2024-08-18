@@ -10,12 +10,60 @@
     }
 
     .project-card {
+        
+        .project-info{
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
 
-        h4 {
-            margin-top: 5px;
-            margin-bottom: 100px;
+
+            h4 {
+                margin-top: 5px;
+                margin-bottom: 10px;
+
+                .project-number {
+
+                    &__border {
+                        border-bottom: 5px solid cyan;
+
+                        &--radius {
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                    
+            }
         }
-    }
+
+        .project-image {
+            height: 25vh;
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgba(13, 104, 105, 0.997);
+
+            @include media-mixins.large-desktopQHD{
+                height: 30vh;
+            }
+        }
+        
+        .react-buttons {
+            margin-bottom: 50px;
+            
+            .react-scss-buttons{
+                
+                &__design {
+                    border: none;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    
+                    &--color {
+                        background-color: rgba(13, 104, 105, 0.997);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }   
 
     @include media-mixins.laptop-large{
         grid-template-columns: 1fr 1fr 1fr;
@@ -27,13 +75,10 @@
     }
 }
 
-.project-image {
-    height: 25vh;
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgba(13, 104, 105, 0.997);
+.projects-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 
-    @include media-mixins.large-desktopQHD{
-        height: 30vh;
-    }
+        
 }

@@ -2,10 +2,41 @@
 
 .heading {
     margin-top: 100px;
+
+    .heading-span-phone {
+        padding-bottom: 5%;
+        &__border {
+            border-bottom: 5px solid cyan;
+
+            &--radius {
+                border-radius: 5px;
+            }
+        }
+    }
     
+    @include media-mixins.laptop {
+
+        .heading-span-phone{
+            border-bottom: none;
+        }
+
+        .heading-span {
+            padding-bottom: 2%;
+    
+            &__border {
+                border-bottom: 10px solid cyan;
+                
+    
+                &--radius {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }
 
 .heading-paragraph {
+
 
     @include media-mixins.tablet{
         width: 75%;
