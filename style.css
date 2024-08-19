@@ -290,15 +290,10 @@ h5 {
   border-radius: 5px;
 }
 .grid-container .project-card .project-image {
-  height: 25vh;
   width: 100%;
+  padding-top: 56.25%;
   border-radius: 10px;
   background-color: rgba(13, 104, 105, 0.997);
-}
-@media only screen and (min-width: 2500px) {
-  .grid-container .project-card .project-image {
-    height: 30vh;
-  }
 }
 .grid-container .project-card .react-buttons {
   margin-bottom: 50px;
