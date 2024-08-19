@@ -1,5 +1,7 @@
 @use './media-mixins.scss';
 .personal-experience {
+    padding: 0px 20px;
+
     .collapsible-menus {
         display: flex;
         flex-direction: column;
@@ -52,16 +54,17 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 100px;
+        padding: 0 50px;
     }
 
     @include media-mixins.laptop-large{
         font-size: 36px;
-        margin-left: 100px;
-        margin-right: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     @include media-mixins.desktop{
-        margin-left: 10%;
-        margin-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }

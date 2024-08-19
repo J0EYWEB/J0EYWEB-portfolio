@@ -1,4 +1,17 @@
 @use './media-mixins.scss';
+#portfolioSection {
+    padding: 0px 20px;
+
+    @include media-mixins.laptop{
+        padding: 0px 50px;
+    }
+
+    @include media-mixins.desktop{
+        padding: 0px 100px;
+    }
+
+}
+
 .grid-container {
     margin-top: 50px;
 
@@ -74,7 +87,5 @@
 .projects-header {
     display: flex;
     gap: 10px;
-    align-items: center;
-
-        
+    align-items: center;  
 }

@@ -7,21 +7,19 @@ body {
 header {
   margin-top: 10px;
   margin-bottom: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media only screen and (min-width: 992px) {
   header {
-    margin-bottom: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1400px) {
   header {
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 @media only screen and (min-width: 2500px) {
@@ -31,16 +29,16 @@ header {
 }
 
 main {
-  margin: 10px 20px;
+  padding: 20px 0;
 }
 @media only screen and (min-width: 992px) {
   main {
-    margin: 20px 50px;
+    padding: 20px 0px;
   }
 }
 @media only screen and (min-width: 1400px) {
   main {
-    margin: 40px 100px;
+    padding: 40px 0px;
   }
 }
 
@@ -263,6 +261,20 @@ h5 {
   }
 }
 
+#portfolioSection {
+  padding: 0px 20px;
+}
+@media only screen and (min-width: 992px) {
+  #portfolioSection {
+    padding: 0px 50px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #portfolioSection {
+    padding: 0px 100px;
+  }
+}
+
 .grid-container {
   margin-top: 50px;
 }
@@ -328,6 +340,7 @@ h5 {
 .about-section {
   margin-top: 75px;
   margin-bottom: 75px;
+  padding: 0px 20px;
 }
 .about-section .phone-heading .about-phone-heading {
   padding-bottom: 2%;
@@ -348,10 +361,15 @@ h5 {
     margin-bottom: 50px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-section {
+    padding: 0 50px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .about-section {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -424,6 +442,9 @@ h5 {
   }
 }
 
+.personal-experience {
+  padding: 0px 20px;
+}
 .personal-experience .collapsible-menus {
   display: flex;
   flex-direction: column;
@@ -471,19 +492,20 @@ h5 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 100px;
+    padding: 0 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .personal-experience {
     font-size: 36px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .personal-experience {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
