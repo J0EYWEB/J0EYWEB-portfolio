@@ -4,9 +4,9 @@
     margin-top: 100px;
 
     .heading-span-phone {
-        padding-bottom: 5%;
+        padding-bottom: 2.5%;
         &__border {
-            border-bottom: 5px solid $secondary-colour;
+            border-bottom: 8px solid $secondary-colour;
 
             &--radius {
                 border-radius: 5px;
@@ -14,7 +14,7 @@
         }
     }
     
-    @include media-mixins.laptop {
+    @include media-mixins.laptop-large {
 
         .heading-span-phone{
             border-bottom: none;

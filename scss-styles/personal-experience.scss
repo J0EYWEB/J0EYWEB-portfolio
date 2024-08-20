@@ -1,8 +1,9 @@
 @use './media-mixins.scss';
+@use './mixin.scss';
 @import './variables.scss';
 
 .personal-experience {
-    padding: 0px 20px;
+    @include mixin.padding-small;
 
     .collapsible-menus {
         display: flex;
@@ -57,17 +58,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 100px;
-        padding: 0 50px;
+        @include mixin.padding-medium;
     }
 
     @include media-mixins.laptop-large{
         font-size: 36px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    @include media-mixins.desktop{
-        padding-left: 15%;
-        padding-right: 15%;
+        @include mixin.padding-percentage;
     }
 }

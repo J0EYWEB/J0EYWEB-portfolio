@@ -34,6 +34,7 @@ header {
     padding-right: 100px;
   }
 }
+
 main {
   padding: 20px 0;
 }
@@ -241,15 +242,15 @@ h5 {
   margin-top: 100px;
 }
 .heading .heading-span-phone {
-  padding-bottom: 5%;
+  padding-bottom: 2.5%;
 }
 .heading .heading-span-phone__border {
-  border-bottom: 5px solid cyan;
+  border-bottom: 8px solid cyan;
 }
 .heading .heading-span-phone__border--radius {
   border-radius: 5px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .heading .heading-span-phone {
     border-bottom: none;
   }
@@ -281,16 +282,19 @@ h5 {
 }
 
 #portfolioSection {
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media only screen and (min-width: 992px) {
   #portfolioSection {
-    padding: 0px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1400px) {
   #portfolioSection {
-    padding: 0px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -325,7 +329,6 @@ h5 {
   padding-top: 56.25%;
   border-radius: 10px;
   background-color: rgba(13, 104, 105, 0.997);
-  box-shadow: 5px 5px 20px cyan, -5px -5px 20px cyan;
 }
 .grid-container .project-card .react-buttons {
   margin-bottom: 50px;
@@ -360,7 +363,8 @@ h5 {
 .about-section {
   margin-top: 75px;
   margin-bottom: 75px;
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .about-section .phone-heading .about-phone-heading {
   padding-bottom: 2%;
@@ -383,7 +387,8 @@ h5 {
 }
 @media only screen and (min-width: 992px) {
   .about-section {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -463,7 +468,8 @@ h5 {
 }
 
 .personal-experience {
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .personal-experience .collapsible-menus {
   display: flex;
@@ -512,18 +518,13 @@ h5 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 100px;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .personal-experience {
     font-size: 36px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .personal-experience {
     padding-left: 15%;
     padding-right: 15%;
   }
@@ -567,7 +568,8 @@ h5 {
 }
 
 .skills {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .skills h3 {
   margin: 0;
@@ -582,7 +584,8 @@ h5 {
 }
 @media only screen and (min-width: 992px) {
   .skills {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {

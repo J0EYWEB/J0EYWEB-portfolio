@@ -1,15 +1,19 @@
 @use './media-mixins.scss';
+@use './mixin.scss';
 @import './variables.scss';
 
+
 #portfolioSection {
-    padding: 0px 20px;
+    @include mixin.padding-small;
 
     @include media-mixins.laptop{
-        padding: 0px 50px;
+
+        @include mixin.padding-medium;
     }
 
     @include media-mixins.desktop{
-        padding: 0px 100px;
+
+        @include mixin.padding-large;
     }
 
 }
@@ -55,7 +59,6 @@
             padding-top: 56.25%;
             border-radius: 10px;
             background-color: $tertiary-colour;
-            box-shadow: 5px 5px 20px $secondary-colour,-5px -5px 20px $secondary-colour;
         }
         
         .react-buttons {

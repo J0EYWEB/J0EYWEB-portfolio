@@ -1,4 +1,5 @@
 @use './media-mixins.scss';
+@use './mixin.scss';
 @import './variables.scss';
 body {
     margin: 0;
@@ -16,22 +17,17 @@ body {
 
 header {
     margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    @include mixin.padding-small;
     
     @include media-mixins.laptop{
-        padding-left: 50px;
-        padding-right: 50px;
+
+        @include mixin.padding-medium;
     }
     
     @include media-mixins.desktop{
-        // margin-top: 20px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    @include media-mixins.large-desktopQHD{
-        // margin-bottom: 100px;
+        
+        @include mixin.padding-large;
     }
 
 }

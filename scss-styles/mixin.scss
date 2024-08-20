@@ -1,0 +1,21 @@
+
+// Mixins for padding sizes
+@mixin padding-small {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin padding-medium {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@mixin padding-large {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@mixin padding-percentage {
+    padding-left: 15%;
+    padding-right: 15%;
+}
