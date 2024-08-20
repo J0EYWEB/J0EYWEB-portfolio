@@ -560,6 +560,10 @@ P {
   background-color: rgba(13, 104, 105, 0.997);
   color: white;
 }
+.react-buttons .react-scss-buttons__design--color:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px cyan, -2px -2px 10px cyan;
+}
 
 .project-card .project-info {
   margin: 5px;
