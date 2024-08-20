@@ -1,0 +1,26 @@
+@use './media-mixins.scss';
+
+.skills {
+    padding: 0 20px;
+
+    h3 {
+        margin: 0;
+    }
+    .skills-icon-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10% 0;
+        img {
+            width: 8%;
+        }
+    }
+
+    @include media-mixins.laptop{
+        padding: 0 50px;
+    }
+
+    @include media-mixins.laptop-large{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}

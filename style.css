@@ -546,4 +546,30 @@ h5 {
   height: 10vh;
 }
 
+.skills {
+  padding: 0 20px;
+}
+.skills h3 {
+  margin: 0;
+}
+.skills .skills-icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 0;
+}
+.skills .skills-icon-container img {
+  width: 8%;
+}
+@media only screen and (min-width: 992px) {
+  .skills {
+    padding: 0 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .skills {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
