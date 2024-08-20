@@ -8,6 +8,19 @@
     border: 2px solid $secondary-colour;
     padding: 25px 100px;
 
+    &__elements {
+        cursor: pointer;
+        top: 0;
+        position: relative;
+        transition: top ease 0.5s;
+
+        &--hover:hover {
+            top: -10px;
+            box-shadow: 2px 2px 5px $secondary-colour, -2px -2px 5px $secondary-colour;
+            color: $heading-colour;
+        }
+    }
+
     @include media-mixins.large-desktop{
         padding: 50px 150px;
         font-size: 28px;

@@ -595,6 +595,17 @@ P {
   border: 2px solid cyan;
   padding: 25px 100px;
 }
+.button-contact__elements {
+  cursor: pointer;
+  top: 0;
+  position: relative;
+  transition: top ease 0.5s;
+}
+.button-contact__elements--hover:hover {
+  top: -10px;
+  box-shadow: 2px 2px 5px cyan, -2px -2px 5px cyan;
+  color: #FFE3D0;
+}
 @media only screen and (min-width: 1900px) {
   .button-contact {
     padding: 50px 150px;
