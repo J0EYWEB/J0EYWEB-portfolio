@@ -1,14 +1,21 @@
 @use './media-mixins.scss';
+@import './variables.scss';
 body {
     margin: 0;
-    background-color: #0b4448;
-    color: white;
+    background-color: $primary-colour;
+    
+    h1, h2, h3, h4, h5 {
+        color: $heading-colour;
+    }
+
+    P {
+        color: $paragraph-colour;
+    }
     
 }
 
 header {
     margin-top: 10px;
-    margin-bottom: 100px;
     padding-left: 20px;
     padding-right: 20px;
     
@@ -24,7 +31,7 @@ header {
     }
 
     @include media-mixins.large-desktopQHD{
-        margin-bottom: 150px;
+        // margin-bottom: 100px;
     }
 
 }
@@ -43,6 +50,8 @@ main {
 
 h1{
     font-size: 24px;
+    font-family: $font-header-primary;
+    width: auto;
 
     @include media-mixins.laptop-large{
         font-size: 36px;
@@ -58,8 +67,13 @@ h1{
 }
 
 h2 {
-    font-size: 80px;
+    font-family: $font-header-primary;
+    font-size: 65px;
     font-weight: 400;
+
+    @include media-mixins.tablet{
+        font-size: 90px;
+    }
 
     @include media-mixins.laptop-large{
         font-size: 100px;
@@ -81,6 +95,7 @@ h2 {
 P {
     font-size: 16px;
     line-height: 25.6px;
+    font-family: $font-paragraph;
 
     @include media-mixins.laptop-large{
         font-size: 18px;
@@ -103,8 +118,9 @@ P {
 
 
 a {
-    color: white;
+    color: $heading-colour;
     text-decoration: none;
+    font-family: $font-paragraph;
 
     @include media-mixins.laptop-large{
         font-size: 18px;
@@ -125,6 +141,7 @@ a {
 
 h3 {
     font-size: 32px;
+    font-family: $font-header-primary;
 
     @include media-mixins.laptop-large{
         font-size: 48px;
@@ -138,6 +155,7 @@ h3 {
 h4 {
     font-size: 29.5px;
     font-weight: 400;
+    font-family: $font-header-primary;
 
     @include media-mixins.laptop-large{
         font-size: 36px;
@@ -151,6 +169,7 @@ h4 {
 h5 {
     font-size: 24px;
     font-weight: 700px;
+    font-family: $font-header-primary;
 
     @include media-mixins.laptop-large{
         font-size: 28px;

@@ -1,4 +1,6 @@
 @use './media-mixins.scss';
+@import './variables.scss';
+
 #portfolioSection {
     padding: 0px 20px;
 
@@ -37,7 +39,7 @@
                 .project-number {
 
                     &__border {
-                        border-bottom: 5px solid cyan;
+                        border-bottom: 5px solid $secondary-colour;
 
                         &--radius {
                             border-radius: 5px;
@@ -52,7 +54,8 @@
             width: 100%;
             padding-top: 56.25%;
             border-radius: 10px;
-            background-color: rgba(13, 104, 105, 0.997);
+            background-color: $tertiary-colour;
+            box-shadow: 5px 5px 20px $secondary-colour,-5px -5px 20px $secondary-colour;
         }
         
         .react-buttons {
@@ -66,8 +69,8 @@
                     padding: 5px 10px;
                     
                     &--color {
-                        background-color: rgba(13, 104, 105, 0.997);
-                        color: white;
+                        background-color: $tertiary-colour;
+                        color: $paragraph-colour;
                     }
                 }
             }

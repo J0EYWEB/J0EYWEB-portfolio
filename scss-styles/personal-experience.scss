@@ -1,4 +1,6 @@
 @use './media-mixins.scss';
+@import './variables.scss';
+
 .personal-experience {
     padding: 0px 20px;
 
@@ -13,7 +15,7 @@
                 padding-bottom: 5px;
 
                 &__border {
-                    border-bottom: 5px solid cyan;
+                    border-bottom: 5px solid $secondary-colour;
 
                     &--radius {
                         border-radius: 5px;
@@ -37,10 +39,11 @@
                     color: white;
                     background-color: transparent;
                     border: none;
-                    border-bottom: 1px solid cyan;
+                    border-bottom: 1px solid $secondary-colour;
                     font-size: 14px;
                     display: flex;
                     justify-content: space-between;
+
                     @include media-mixins.desktop{
                        font-size: 16px;
                     }

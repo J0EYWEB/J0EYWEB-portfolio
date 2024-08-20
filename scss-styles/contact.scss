@@ -1,5 +1,5 @@
 @use './media-mixins.scss';
-
+@import './variables.scss';
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
             background-color: transparent;
             color: white;
             font-size: 18px;
-            border: 2px solid cyan;
+            border: 2px solid $secondary-colour;
             padding: 25px 100px;
 
             @include media-mixins.large-desktop{

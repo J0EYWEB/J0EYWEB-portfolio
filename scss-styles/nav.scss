@@ -1,4 +1,5 @@
 @use './media-mixins.scss';
+@import './variables.scss';
 
 .navigation {
     display: flex;
@@ -7,7 +8,7 @@
     width: 100%;
 
     .last-name-span{
-        color: cyan;
+        color: $secondary-colour;
     }
 
     .nav-menu-icon {
@@ -23,7 +24,7 @@
             transition: color 0.25s ease-in-out;
         }
         a:hover {
-            color: cyan;
+            color: $secondary-colour;
             
         }
 

@@ -1,12 +1,12 @@
 @use './media-mixins.scss';
-
+@import './variables.scss';
 .heading {
     margin-top: 100px;
 
     .heading-span-phone {
         padding-bottom: 5%;
         &__border {
-            border-bottom: 5px solid cyan;
+            border-bottom: 5px solid $secondary-colour;
 
             &--radius {
                 border-radius: 5px;
@@ -24,7 +24,7 @@
             padding-bottom: 2%;
     
             &__border {
-                border-bottom: 10px solid cyan;
+                border-bottom: 10px solid $secondary-colour;
                 
     
                 &--radius {
