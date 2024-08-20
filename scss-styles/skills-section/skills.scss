@@ -1,5 +1,5 @@
-@use './media-mixins.scss';
-@use './mixin.scss';
+@use '../media-mixins.scss';
+@use '../mixin.scss';
 
 .skills {
     @include mixin.padding-small;

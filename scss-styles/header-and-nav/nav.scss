@@ -1,5 +1,5 @@
-@use './media-mixins.scss';
-@import './variables.scss';
+@use '../media-mixins.scss';
+@import '../variables.scss';
 
 .navigation {
     display: flex;
@@ -34,5 +34,27 @@
             width: 30%;
             
         }
+    }
+}
+
+a {
+    color: $heading-colour;
+    text-decoration: none;
+    font-family: $font-paragraph;
+
+    @include media-mixins.laptop-large{
+        font-size: 18px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 20px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 24px;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        font-size: 28px;
     }
 }

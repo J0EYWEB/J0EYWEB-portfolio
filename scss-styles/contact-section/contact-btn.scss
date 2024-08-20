@@ -1,0 +1,16 @@
+@use '../media-mixins.scss';
+@import '../variables.scss';
+
+.button-contact {
+    background-color: transparent;
+    color: $paragraph-colour;
+    font-size: 18px;
+    border: 2px solid $secondary-colour;
+    padding: 25px 100px;
+
+    @include media-mixins.large-desktop{
+        padding: 50px 150px;
+        font-size: 28px;
+    }
+}
+

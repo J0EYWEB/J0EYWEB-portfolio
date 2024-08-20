@@ -1,0 +1,47 @@
+@use '../media-mixins.scss';
+@use '../mixin.scss';
+@import '../variables.scss';
+
+
+#portfolioSection {
+    @include mixin.padding-small;
+
+    @include media-mixins.laptop{
+
+        @include mixin.padding-medium;
+    }
+
+    @include media-mixins.desktop{
+
+        @include mixin.padding-large;
+    }
+
+}
+
+.grid-container {
+    margin-top: 50px;
+
+    @include media-mixins.large-phone{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+     
+
+    @include media-mixins.laptop-large{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        column-gap: 50px;
+    }
+}
+
+.projects-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;  
+}

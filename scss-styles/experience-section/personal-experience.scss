@@ -1,0 +1,42 @@
+@use '../media-mixins.scss';
+@use '../mixin.scss';
+@import '../variables.scss';
+
+.personal-experience {
+    @include mixin.padding-small;
+
+    .collapsible-menus {
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            margin: 0;
+
+            .personal-heading {
+                padding-bottom: 5px;
+
+                &__border {
+                    border-bottom: 5px solid $secondary-colour;
+
+                    &--radius {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @include media-mixins.laptop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 100px;
+        @include mixin.padding-medium;
+    }
+
+    @include media-mixins.laptop-large{
+        font-size: 36px;
+        @include mixin.padding-percentage;
+    }
+}

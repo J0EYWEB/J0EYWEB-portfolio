@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.react-buttons {
+    margin-bottom: 50px;
+    
+    .react-scss-buttons{
+        
+        &__design {
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            
+            &--color {
+                background-color: $tertiary-colour;
+                color: $paragraph-colour;
+            }
+        }
+    }
+}

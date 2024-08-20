@@ -1,0 +1,90 @@
+@use './media-mixins.scss';
+
+.heading-colour {
+    color: $heading-colour;
+}
+
+h1{
+    font-size: 24px;
+    font-family: $font-header-primary;
+    width: auto;
+
+    @include media-mixins.laptop-large{
+        font-size: 36px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 42px;
+    }
+
+    @include media-mixins.large-desktopQHD{
+        font-size: 50px;
+    }
+}
+
+h2 {
+    font-family: $font-header-primary;
+    font-size: 65px;
+    font-weight: 400;
+
+    @include media-mixins.tablet{
+        font-size: 90px;
+    }
+
+    @include media-mixins.laptop-large{
+        font-size: 90px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 128px;
+    }
+    
+    @include media-mixins.large-desktopQHD{
+        font-size: 168px;
+    }
+}
+
+h3 {
+    font-size: 32px;
+    font-family: $font-header-primary;
+
+    @include media-mixins.laptop-large{
+        font-size: 48px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 54px;   
+    }
+}
+
+h4 {
+    font-size: 29.5px;
+    font-weight: 400;
+    font-family: $font-header-primary;
+
+    @include media-mixins.laptop-large{
+        font-size: 36px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 42px;
+    }
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 700px;
+    font-family: $font-header-primary;
+
+    @include media-mixins.laptop-large{
+        font-size: 28px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 32px;
+    }
+
+    @include media-mixins.large-desktop{
+        font-size: 36px;
+    }
+}

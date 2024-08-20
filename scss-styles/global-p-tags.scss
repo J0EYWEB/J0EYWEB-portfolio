@@ -1,0 +1,25 @@
+@use './media-mixins.scss';
+
+P {
+    font-size: 16px;
+    line-height: 25.6px;
+    font-family: $font-paragraph;
+    color: $paragraph-colour;
+
+    @include media-mixins.laptop-large{
+        font-size: 18px;
+    }
+
+    @include media-mixins.desktop{
+        font-size: 20px;
+    }
+    @include media-mixins.large-desktop{
+        font-size: 24px;   
+    }
+
+    @include media-mixins.large-desktopQHD{
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+}
