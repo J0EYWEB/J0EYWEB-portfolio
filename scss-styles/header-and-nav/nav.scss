@@ -12,6 +12,15 @@
     }
 
     .nav-menu-icon {
+
+        &__elements {
+
+            &--hover {
+                
+                cursor: pointer;
+            }
+        }
+
         @include media-mixins.tablet{
             display: none;
         }

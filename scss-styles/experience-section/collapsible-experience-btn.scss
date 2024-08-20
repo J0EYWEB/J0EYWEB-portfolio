@@ -13,16 +13,25 @@
             width: 100%;
             padding: 20px 0;
             text-align: left;
-            color: white;
+            color: $paragraph-colour;
             background-color: transparent;
             border: none;
             border-bottom: 1px solid $secondary-colour;
             font-size: 14px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            transition: top ease 0.5s;
 
             @include media-mixins.desktop{
                font-size: 16px;
             }
+        }
+        
+        .collapsible:hover {
+            top: -10px;
+            border-bottom: 1px solid $heading-colour;
+            cursor: pointer;
+            
         }
 }

@@ -57,6 +57,9 @@ main {
 .navigation .last-name-span {
   color: cyan;
 }
+.navigation .nav-menu-icon__elements--hover {
+  cursor: pointer;
+}
 @media only screen and (min-width: 768px) {
   .navigation .nav-menu-icon {
     display: none;
@@ -542,11 +545,18 @@ P {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  transition: top ease 0.5s;
 }
 @media only screen and (min-width: 1400px) {
   .collapsible-buttons .collapsible {
     font-size: 16px;
   }
+}
+.collapsible-buttons .collapsible:hover {
+  top: -10px;
+  border-bottom: 1px solid #FFE3D0;
+  cursor: pointer;
 }
 
 .react-buttons {
