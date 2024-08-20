@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.eye-code-buttons {
+
+    padding:0;
+    border: none;
+    cursor: pointer;
+    background-color: $primary-colour;
+
+    &__radius {
+        border-radius: 50%;
+
+        &--colour:hover {
+            box-shadow: 2px 2px 10px $secondary-colour, -2px -2px 10px $secondary-colour;
+        }
+    }
+    
+    .eye-code-icons{
+        display: flex;
+        background-color: $primary-colour;
+        border-radius: 50%;
+    
+    }
+}

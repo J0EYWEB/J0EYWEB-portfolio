@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 body {
   margin: 0;
   background-color: #0b4448;
@@ -599,6 +600,24 @@ P {
     padding: 50px 150px;
     font-size: 28px;
   }
+}
+
+.eye-code-buttons {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: #0b4448;
+}
+.eye-code-buttons__radius {
+  border-radius: 50%;
+}
+.eye-code-buttons__radius--colour:hover {
+  box-shadow: 2px 2px 10px cyan, -2px -2px 10px cyan;
+}
+.eye-code-buttons .eye-code-icons {
+  display: flex;
+  background-color: #0b4448;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
